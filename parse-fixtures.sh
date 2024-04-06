@@ -2,8 +2,6 @@
 
 set -eou pipefail
 
-enable -f /usr/lib/bash/csv csv
-
 echo BEGIN:VCALENDAR
 echo VERSION:2.0
 echo PRODID:-//YourCompany//Football Schedule//EN
