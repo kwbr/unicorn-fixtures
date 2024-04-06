@@ -2,6 +2,7 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//YourCompany//Football Schedule//EN
 METHOD:REQUEST
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VTIMEZONE
 TZID:Australia/Sydney
 X-LIC-LOCATION:Australia/Sydney
