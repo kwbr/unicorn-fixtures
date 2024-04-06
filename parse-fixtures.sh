@@ -24,8 +24,8 @@ jq -r '
     away_team_name=$(echo "$line" | awk -F',' '{printf "%s", $5}' | tr -d '"')
 
   # Format the date for ICS
-  start_date=$(date -u --date="@$(date "+%s" -d "$date")" +%Y%m%dT%H%M%S)
-  end_date=$(date -u --date="@$(date "+%s" -d "$date 1 hour")" +%Y%m%dT%H%M%S)
+  start_date=$(date -u --date="@$(date "+%s" -d "$date")" +%Y%m%dT%H%M%SZ)
+  end_date=$(date -u --date="@$(date "+%s" -d "$date 1 hour")" +%Y%m%dT%H%M%SZ)
   # start_date=$(date -d "$date" +%Y%m%dT%H%M%SZ)
   # end_date=$(date -d "$date 1 hour" +%Y%m%dT%H%M%SZ)
 
