@@ -6,6 +6,7 @@ echo BEGIN:VCALENDAR
 echo VERSION:2.0
 echo PRODID:-//YourCompany//Football Schedule//EN
 echo METHOD:REQUEST
+echo X-WR-TIMEZONE:Australia/Sydney
 
 # Process JSON data with jq
 jq -r '
