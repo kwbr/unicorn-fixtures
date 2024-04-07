@@ -50,14 +50,14 @@ jq -r '
   # Format the date for ICS
   # start_date=$(date -u --date="@$(date "+%s" -d "$date")" +%Y%m%dT%H%M%SZ)
   # end_date=$(date -u --date="@$(date "+%s" -d "$date 1 hour")" +%Y%m%dT%H%M%SZ)
-  start_date=$(date -d "$date" +%Y%m%dT%H%M%SZ)
-  end_date=$(date -d "$date 1 hour" +%Y%m%dT%H%M%SZ)
+  start_date=$(date -d "$date" +%Y%m%dT%H%M%S)
+  end_date=$(date -d "$date 1 hour" +%Y%m%dT%H%M%S)
 
   cat << EOF
 BEGIN:VEVENT
-DTSTART:$start_date
-DTSTAMP:$start_date
-DTEND:$end_date
+DTSTART;TZID=Australia/Sydney:$start_date
+DTSTAMP;TZID=Australia/Sydney:$start_date
+DTEND;TZID=Australia/Sydney:$end_date
 UID:$start_date-fixture@glorybox.de
 SUMMARY:$name
 LOCATION:$ground_name
