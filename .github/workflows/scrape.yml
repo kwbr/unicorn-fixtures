@@ -18,7 +18,7 @@ jobs:
           | jq > fixtures.json
     - name: Update ICS file
       run: |-
-          bash parse-fixtures.sh > game-calendar-2024.ics
+          bash parse-fixtures.sh > fixtures.ics
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
