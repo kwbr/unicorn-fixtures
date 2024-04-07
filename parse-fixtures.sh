@@ -2,11 +2,34 @@
 
 set -eou pipefail
 
-echo BEGIN:VCALENDAR
-echo VERSION:2.0
-echo PRODID:-//YourCompany//Football Schedule//EN
-echo METHOD:REQUEST
-echo X-WR-TIMEZONE:Australia/Sydney
+cat << EOF
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//YourCompany//Football Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dee Why FC Unicorns Fixtures
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VTIMEZONE
+TZID:Australia/Sydney
+X-LIC-LOCATION:Australia/Sydney
+BEGIN:STANDARD
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+TZNAME:AEST
+DTSTART:19700405T030000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+TZNAME:AEDT
+DTSTART:19701004T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU
+END:DAYLIGHT
+END:VTIMEZONE
+EOF
+
 
 # Process JSON data with jq
 jq -r '
@@ -25,10 +48,10 @@ jq -r '
     away_team_name=$(echo "$line" | awk -F',' '{printf "%s", $5}' | tr -d '"')
 
   # Format the date for ICS
-  # start_date=$(date -u --date="@$(date "+%s" -d "$date")" +%Y%m%dT%H%M%S)
-  # end_date=$(date -u --date="@$(date "+%s" -d "$date 1 hour")" +%Y%m%dT%H%M%S)
-  start_date=$(date -d "$date" +%Y%m%dT%H%M%S)
-  end_date=$(date -d "$date 1 hour" +%Y%m%dT%H%M%S)
+  start_date=$(date -u --date="@$(date "+%s" -d "$date")" +%Y%m%dT%H%M%SZ)
+  end_date=$(date -u --date="@$(date "+%s" -d "$date 1 hour")" +%Y%m%dT%H%M%SZ)
+  # start_date=$(date -d "$date" +%Y%m%dT%H%M%S)
+  # end_date=$(date -d "$date 1 hour" +%Y%m%dT%H%M%S)
 
   cat << EOF
 BEGIN:VEVENT
