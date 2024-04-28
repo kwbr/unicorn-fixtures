@@ -2,58 +2,6 @@
   "data": [
     {
       "type": "fixtures",
-      "hash_id": "lNbpynlpyd",
-      "attributes": {
-        "name": "Dee Why FC W-7 Green 1 Female UNICORNS vs Narrabeen Football Club W-7 Green 1 Female Firebirds",
-        "date": "2024-04-28 08:30:00",
-        "round": "R3",
-        "full_round": "Round 3",
-        "ground_name": "Dee Why Oval",
-        "ground_latitude": -33.74765,
-        "ground_longitude": 151.29061,
-        "ground_address": null,
-        "field_name": "DYJ7",
-        "is_historic_field": false,
-        "home_team_name": "Dee Why FC W-7 Green 1 Female UNICORNS",
-        "home_logo": "https://ocean.dribl.com/de6abc271c34480293de1024f21c04b3",
-        "away_team_name": "Narrabeen Football Club W-7 Green 1 Female Firebirds",
-        "away_logo": "https://ocean.dribl.com/4aa0445e55024b3ca6bd782529802d7c",
-        "competition_name": "Main",
-        "league_name": "W-7 Green 1 Female",
-        "status": "pending",
-        "bye_flag": false,
-        "is_unstructured": false,
-        "league_result_access": "body",
-        "home_score": null,
-        "home_score_extra": null,
-        "home_score_penalty": null,
-        "home_score_half": null,
-        "home_score_extra_half": null,
-        "away_score": null,
-        "away_score_extra": null,
-        "away_score_penalty": null,
-        "away_score_half": null,
-        "away_score_extra_half": null,
-        "allocated_center_referee": false,
-        "allocated_assistant_referee_1": false,
-        "allocated_assistant_referee_2": false,
-        "allocated_fourth_official": false,
-        "allocated_game_leader": false,
-        "referee_count": 0,
-        "enable_referees_allocated": true,
-        "match_hash_id": "JmXQon70rN",
-        "forfeit_team_hash_id": null,
-        "home_team_hash_id": "Vdz5xvWZKG",
-        "away_team_hash_id": "nmYyVaLpmz"
-      },
-      "links": {
-        "self": {
-          "href": "https://mc-api.dribl.com/api/fixtures/lNbpynlpyd"
-        }
-      }
-    },
-    {
-      "type": "fixtures",
       "hash_id": "3NPoXqVyym",
       "attributes": {
         "name": "Brookvale FC W-7 Green 1 Female Bees vs Dee Why FC W-7 Green 1 Female UNICORNS",
