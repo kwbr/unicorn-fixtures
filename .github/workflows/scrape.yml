@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v4
     - name: Fetch latest data
       run: |-
-        curl 'https://mc-api.dribl.com/api/fixtures?date_range=default&season=3vmZpnGKq5&competition=R3NPZlPdr4&league=8nm7kPnLmO&club=RwNl4geNjr&tenant=kbam1QjmwX' \
+        bash fetch-fixture.sh
           | jq > fixtures.json
     - name: Update ICS file
       run: |-
