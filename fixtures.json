@@ -158,6 +158,58 @@
     },
     {
       "type": "fixtures",
+      "hash_id": "3NPoXqVyym",
+      "attributes": {
+        "name": "Brookvale FC W-7 Green 1 Female Bees vs Dee Why FC W-7 Green 1 Female UNICORNS",
+        "date": "2024-07-13T23:20:00.000000Z",
+        "round": "R4",
+        "full_round": "Round 4",
+        "ground_name": "Grahams Reserve",
+        "ground_latitude": -33.789279,
+        "ground_longitude": 151.277775,
+        "ground_address": null,
+        "field_name": "J7A",
+        "is_historic_field": false,
+        "home_team_name": "Brookvale FC W-7 Green 1 Female Bees",
+        "home_logo": "https://ocean.dribl.com/c4ea52217c4a446681febbed09c74e1d",
+        "away_team_name": "Dee Why FC W-7 Green 1 Female UNICORNS",
+        "away_logo": "https://ocean.dribl.com/de6abc271c34480293de1024f21c04b3",
+        "competition_name": "Main",
+        "league_name": "W-7 Green 1 Female",
+        "status": "pending",
+        "bye_flag": false,
+        "is_unstructured": false,
+        "league_result_access": "body",
+        "home_score": null,
+        "home_score_extra": null,
+        "home_score_penalty": null,
+        "home_score_half": null,
+        "home_score_extra_half": null,
+        "away_score": null,
+        "away_score_extra": null,
+        "away_score_penalty": null,
+        "away_score_half": null,
+        "away_score_extra_half": null,
+        "allocated_center_referee": false,
+        "allocated_assistant_referee_1": false,
+        "allocated_assistant_referee_2": false,
+        "allocated_fourth_official": false,
+        "allocated_game_leader": false,
+        "referee_count": 0,
+        "enable_referees_allocated": true,
+        "match_hash_id": "8NOpYL7M2K",
+        "forfeit_team_hash_id": null,
+        "home_team_hash_id": "pmvzX80omv",
+        "away_team_hash_id": "Vdz5xvWZKG"
+      },
+      "links": {
+        "self": {
+          "href": "https://mc-api.dribl.com/api/fixtures/3NPoXqVyym"
+        }
+      }
+    },
+    {
+      "type": "fixtures",
       "hash_id": "RdkqG9yyRN",
       "attributes": {
         "name": "Collaroy Cromer Strikers FC W-7 Green 1 Female UNICORNS vs Dee Why FC W-7 Green 1 Female UNICORNS",

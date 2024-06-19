@@ -54,6 +54,16 @@ DESCRIPTION:
  Match between Dee Why FC W-7 Green 1 Female UNICORNS and Avalon SC W-7 Green 1 Female Mermaids
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;TZID=Australia/Sydney:20240713T232000
+DTSTAMP;TZID=Australia/Sydney:20240713T232000
+DTEND;TZID=Australia/Sydney:20240714T002000
+UID:20240713T232000-fixture@glorybox.de
+SUMMARY:Brookvale FC W-7 Green 1 Female Bees vs Dee Why FC W-7 Green 1 Female UNICORNS
+LOCATION:Grahams Reserve
+DESCRIPTION:
+ Match between Brookvale FC W-7 Green 1 Female Bees and Dee Why FC W-7 Green 1 Female UNICORNS
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;TZID=Australia/Sydney:20240720T223000
 DTSTAMP;TZID=Australia/Sydney:20240720T223000
 DTEND;TZID=Australia/Sydney:20240720T233000
